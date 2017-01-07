@@ -1,6 +1,14 @@
-To run:
+# To run:
 
 ```
 npm install
-npm build
+npm -g install webpack
+webpack
+```
+
+# Deployment:
+
+```
+npm -g install gh-pages
+gh-pages -d dist/
 ```
