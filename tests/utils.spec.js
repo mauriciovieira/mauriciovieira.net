@@ -5,19 +5,19 @@ import { toKey, getLanguageFromHash, resolveObjectByPath } from '../scripts/util
 describe('Utils function', ()=>{
   context("toKey", ()=>{
 
-    it("should convert a query with class selector string in a key", ()=>{
+    it("should convert a query with class selector string to a key", ()=>{
       let query  = '.that.is.mytest'
       let resultExpected = 'that.is.mytest'
       expect(toKey(query)).to.equal(resultExpected)
     })
 
-    it("should convert a query with id selector string in a key", ()=>{
+    it("should convert a query with id selector string to a key", ()=>{
       let query  = '#that.is.mytest'
       let resultExpected = 'that.is.mytest'
       expect(toKey(query)).to.equal(resultExpected)
     })
 
-    it("should convert a query with children class selector string in a key", ()=>{
+    it("should convert a query with children class selector string to a key", ()=>{
       let query  = '.that .is .mytest'
       let resultExpected = 'that.is.mytest'
       expect(toKey(query)).to.equal(resultExpected)
@@ -39,7 +39,7 @@ describe('Utils function', ()=>{
       expect(getLanguageFromHash()).to.equal("pt-BR")
     })
 
-    it("should be always return pt for invalid languages", ()=>{
+    it("should always return pt for invalid languages", ()=>{
       window.location.hash = "#not"
       expect(getLanguageFromHash()).to.equal("pt-BR")
     })

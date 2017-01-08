@@ -10,8 +10,8 @@ describe('Translations', ()=>{
     })
 
     it('should have portuguese', ()=>{
-      const en = I18n.translations["pt-BR"]
-      expect(en).to.exist
+      const ptBR = I18n.translations["pt-BR"]
+      expect(ptBR).to.exist
     })
   })
 
