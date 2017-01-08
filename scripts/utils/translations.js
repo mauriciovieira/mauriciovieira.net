@@ -17,23 +17,19 @@ var I18n = {
 
 const en = {
   myself: {
-    about: "I am a FullStack developer with focus on FrontEnd.",
+    about: "Senior Software Engineer",
     contact: {
-      fingerprint: {
-        pgp: "Do you want to talk to me using cryptography?",
-      }
-    },
+      email: 'contact@mauriciovieira.net'
+    }
   }
 }
 
 const ptBR = {
   myself: {
-    about: "Desenvolvedor FullStack com foco em FrontEnd.",
+    about: "Engenheiro de Software Sênior",
     contact: {
-      fingerprint: {
-        pgp: "Quer me entrar em contato comigo de forma segura?",
-      }
-    },
+      email: 'contato@mauriciovieira.net'
+    }
   }
 }
 

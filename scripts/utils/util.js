@@ -1,7 +1,7 @@
 export function getLanguageFromHash(){
   let language = "pt-BR"
   if(window.location.hash){
-    language =  window.location.hash.substring(1)
+    language = window.location.hash.substring(1)
   }
 
   if(language === "en"){

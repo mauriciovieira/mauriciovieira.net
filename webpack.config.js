@@ -41,12 +41,12 @@ var config = {
         to: path.join(__dirname, 'dist/logos/'),
       },
       {
-        from: path.join(__dirname, 'assets/img/perfil.jpg'),
+        from: path.join(__dirname, 'assets/img/photo.jpg'),
         to: path.join(__dirname, 'dist/'),
       }
     ]),
     new FaviconsWebpackPlugin({
-      logo: path.join(__dirname, 'assets/img/perfil.jpg'),
+      logo: path.join(__dirname, 'assets/img/photo.jpg'),
     }),
     new ExtractTextPlugin('[name].css'),
     new HtmlWebpackPlugin({
