@@ -1,5 +1,5 @@
 export function getLanguageFromHash(){
-  let language = "pt-BR"
+  let language = "en"
   if(window.location.hash){
     language = window.location.hash.substring(1)
   }
@@ -7,7 +7,13 @@ export function getLanguageFromHash(){
   if(language === "en"){
 		return "en"
   }
-  return "pt-BR"
+  if(language === "es"){
+		return "es"
+  }
+  if(language === "pt-BR"){
+		return "pt-BR"
+  }
+  return "en"
 }
 
 export function toKey(query = ''){

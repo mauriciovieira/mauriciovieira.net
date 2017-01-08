@@ -9,6 +9,11 @@ describe('Translations', ()=>{
       expect(en).to.exist
     })
 
+    it('should have spanish', ()=>{
+      const es = I18n.translations["es"]
+      expect(es).to.exist
+    })
+
     it('should have portuguese', ()=>{
       const ptBR = I18n.translations["pt-BR"]
       expect(ptBR).to.exist

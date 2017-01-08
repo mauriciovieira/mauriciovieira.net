@@ -3,7 +3,7 @@ import { resolveObjectByPath } from './util'
 var I18n = {
   translations: {
   },
-  locale: 'en',
+  locale: '',
   t: function translate(key){
     let result = "not found"
     let translation = this.translations[this.locale]
@@ -24,6 +24,15 @@ const en = {
   }
 }
 
+const es = {
+  myself: {
+    about: "Ingeniero de Software Senior",
+    contact: {
+      email: 'contacto@mauriciovieira.net'
+    }
+  }
+}
+
 const ptBR = {
   myself: {
     about: "Engenheiro de Software Sênior",
@@ -34,6 +43,7 @@ const ptBR = {
 }
 
 I18n.translations["en"] = en
+I18n.translations["es"] = es
 I18n.translations["pt-BR"] = ptBR
 
 export default I18n

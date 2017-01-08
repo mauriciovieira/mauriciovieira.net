@@ -30,18 +30,18 @@ describe('Utils function', ()=>{
     jsdom()
 
     it("should be translated using location hash", ()=>{
-      window.location.hash = "#en"
+      window.location.hash = "#es"
+      expect(getLanguageFromHash()).to.equal("es")
+    })
+
+    it("should be translated using en as default", ()=>{
+      window.location.hash = ""
       expect(getLanguageFromHash()).to.equal("en")
     })
 
-    it("should be translated using pt-BR as default", ()=>{
-      window.location.hash = ""
-      expect(getLanguageFromHash()).to.equal("pt-BR")
-    })
-
-    it("should always return pt for invalid languages", ()=>{
+    it("should always return en for invalid languages", ()=>{
       window.location.hash = "#not"
-      expect(getLanguageFromHash()).to.equal("pt-BR")
+      expect(getLanguageFromHash()).to.equal("en")
     })
 
   })
