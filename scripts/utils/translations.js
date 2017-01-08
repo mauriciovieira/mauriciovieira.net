@@ -3,7 +3,7 @@ import { resolveObjectByPath } from './util'
 var I18n = {
   translations: {
   },
-  locale: 'pt-BR',
+  locale: 'en',
   t: function translate(key){
     let result = "not found"
     let translation = this.translations[this.locale]
