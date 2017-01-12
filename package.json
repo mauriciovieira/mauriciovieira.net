@@ -6,6 +6,7 @@
   "scripts": {
     "build": "webpack",
     "deploy": "gh-pages -d dist",
+    "predeploy": "echo mauriciovieira.net > dist/CNAME",
     "test": "mocha --compilers js:babel-register --require babel-polyfill --recursive ./tests"
   },
   "author": "RatoX",
