@@ -10,6 +10,12 @@ npm -g install webpack
 webpack
 ```
 
+# To test:
+
+```
+npm test
+```
+
 # Deployment:
 
 ```
