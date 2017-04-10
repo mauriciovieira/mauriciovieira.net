@@ -3,7 +3,7 @@ import { $, $$, toKey, getLanguageFromHash } from "~/utils/util"
 
 const stringsToTranslate = [
   '.myself .about',
-  '.myself .contact .email',
+  '.myself .contact .email'
 ]
 
 let translate = function(language=getLanguageFromHash()){

@@ -6,6 +6,9 @@
   "scripts": {
     "build": "webpack",
     "deploy": "gh-pages -d dist",
+    "lint": "eslint .",
+    "lintfix": "eslint --fix .",
+    "pretest": "npm run lint",
     "predeploy": "echo mauriciovieira.net > dist/CNAME",
     "test": "mocha --compilers js:babel-register --require babel-polyfill --recursive ./tests"
   },
@@ -24,6 +27,8 @@
     "chai": "^3.5.0",
     "copy-webpack-plugin": "^4.0.0",
     "css-loader": "^0.25.0",
+    "eslint": "^3.19.0",
+    "eslint-plugin-chai-friendly": "^0.2.0",
     "extract-text-webpack-plugin": "^1.0.1",
     "favicons-webpack-plugin": "0.0.7",
     "file-loader": "^0.9.0",
