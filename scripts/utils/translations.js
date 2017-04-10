@@ -12,7 +12,7 @@ var I18n = {
     }
 
     return result
-  },
+  }
 }
 
 const en = {
