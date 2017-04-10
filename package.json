@@ -1,7 +1,7 @@
 {
-  "name": "personal-experiment-place",
-  "version": "0.0.1",
-  "description": "",
+  "name": "mauriciovieira-dot-net",
+  "version": "0.0.2",
+  "description": "Personal website using pug and webpack",
   "main": "index.js",
   "scripts": {
     "build": "webpack",
@@ -9,7 +9,7 @@
     "predeploy": "echo mauriciovieira.net > dist/CNAME",
     "test": "mocha --compilers js:babel-register --require babel-polyfill --recursive ./tests"
   },
-  "author": "RatoX",
+  "author": "Mauricio Vieira",
   "license": "GPL-3.0",
   "dependencies": {},
   "devDependencies": {
