@@ -1,4 +1,4 @@
-import jsdom from 'mocha-jsdom'
+import 'jsdom-global/register'
 import { expect } from 'chai'
 import { toKey, getLanguageFromHash, resolveObjectByPath } from '../scripts/utils/util'
 
@@ -26,8 +26,6 @@ describe('Utils function', ()=>{
   })
 
   context("hash", ()=>{
-
-    jsdom()
 
     it("should be translated using location hash", ()=>{
       window.location.hash = "#es"
