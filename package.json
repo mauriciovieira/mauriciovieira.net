@@ -14,6 +14,10 @@
   },
   "author": "Mauricio Vieira",
   "license": "GPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mauriciovieira/mauriciovieira.net.git"
+  },
   "dependencies": {},
   "devDependencies": {
     "babel": "^6.5.2",
