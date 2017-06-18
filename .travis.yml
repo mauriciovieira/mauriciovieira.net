@@ -2,6 +2,13 @@ language: node_js
 node_js:
   - "6"
 
+cache:
+  directories:
+    - "node_modules"
+    
+after_success:
+  - npm build
+
 before_deploy:
   - npm run-script predeploy
   - LAST_COMMIT=$(git log -1 --pretty=format:'%h <%an> - %s')
