@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "lintfix": "eslint --fix .",
     "pretest": "npm run lint",
-    "predeploy": "echo mauriciovieira.net > dist/CNAME",
+    "predeploy": "ls; pwd; echo mauriciovieira.net > dist/CNAME",
     "test": "mocha --compilers js:babel-register --require babel-polyfill --recursive ./tests"
   },
   "author": "Mauricio Vieira",
