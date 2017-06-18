@@ -3,7 +3,7 @@ node_js:
   - "node"
 
 before_install:
-  - npm -g install node-gyp node-pre-gyp
+  - npm -g install node-gyp@3.4.0 node-pre-gyp@0.6.32
 
 before_deploy:
   - npm run-script predeploy
