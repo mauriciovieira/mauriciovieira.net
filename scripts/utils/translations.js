@@ -17,7 +17,7 @@ var I18n = {
 
 const en = {
   myself: {
-    about: "Senior Software Engineer",
+    about: "Software Engineer",
     contact: {
       email: 'contact@mauriciovieira.net'
     }
@@ -26,7 +26,7 @@ const en = {
 
 const es = {
   myself: {
-    about: "Ingeniero de Software Senior",
+    about: "Ingeniero de Software",
     contact: {
       email: 'contacto@mauriciovieira.net'
     }
@@ -35,7 +35,7 @@ const es = {
 
 const ptBR = {
   myself: {
-    about: "Engenheiro de Software Sênior",
+    about: "Engenheiro de Software",
     contact: {
       email: 'contato@mauriciovieira.net'
     }
