@@ -9,4 +9,8 @@ before_deploy:
   - node_modules/gh-pages/bin/gh-pages -d dist/ -m "Updates from $LAST_COMMIT"
 
 deploy:
-  - npm deploy
+  provider: pages
+  github_token: $GITHUB_TOKEN
+  skip_cleanup: true
+  on:
+    branch: 'gh-pages'
