@@ -5,9 +5,9 @@ node_js:
 cache:
   directories:
     - "node_modules"
-    
+
 after_success:
-  - npm build
+  - npm run build
 
 before_deploy:
   - npm run-script predeploy
