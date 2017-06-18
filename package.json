@@ -20,7 +20,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "babel": "^6.5.2",
+    "babel-cli": "^6.24.1",
     "babel-core": "^6.17.0",
     "babel-loader": "^6.2.5",
     "babel-polyfill": "^6.16.0",
