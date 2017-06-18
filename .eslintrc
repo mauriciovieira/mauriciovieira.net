@@ -9,6 +9,11 @@ env:
   jquery: true
   node: true
 
+parserOptions:
+  sourceType: module
+
+plugins: [ chai-friendly ]
+
 # http://eslint.org/docs/rules/
 rules:
   # Possible Errors
@@ -44,6 +49,7 @@ rules:
   # Best Practices
   accessor-pairs: 2
   block-scoped-var: 0
+  chai-friendly/no-unused-expressions: 2
   complexity: [2, 6]
   consistent-return: 0
   curly: 0
@@ -57,7 +63,6 @@ rules:
   no-case-declarations: 2
   no-div-regex: 2
   no-else-return: 0
-  no-empty-label: 2
   no-empty-pattern: 2
   no-eq-null: 2
   no-eval: 2
@@ -69,7 +74,7 @@ rules:
   no-implied-eval: 2
   no-invalid-this: 0
   no-iterator: 2
-  no-labels: 0
+  no-labels: 2
   no-lone-blocks: 2
   no-loop-func: 2
   no-magic-number: 0
@@ -88,7 +93,7 @@ rules:
   no-self-compare: 2
   no-sequences: 0
   no-throw-literal: 0
-  no-unused-expressions: 2
+  no-unused-expressions: 0
   no-useless-call: 2
   no-useless-concat: 2
   no-void: 2
