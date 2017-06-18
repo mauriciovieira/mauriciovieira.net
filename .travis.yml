@@ -2,9 +2,6 @@ language: node_js
 node_js:
   - "6"
 
-before_install:
-  - npm -g install node-gyp@3.4.0 node-pre-gyp@0.6.32
-
 before_deploy:
   - npm run-script predeploy
   - LAST_COMMIT=$(git log -1 --pretty=format:'%h <%an> - %s')
