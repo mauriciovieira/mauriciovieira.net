@@ -2,7 +2,7 @@ language: node_js
 node_js:
   - "node"
 
-pre_install:
+before_install:
   - npm -g install node-gyp node-pre-gyp
 
 before_deploy:
