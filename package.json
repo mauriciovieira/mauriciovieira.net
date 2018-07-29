@@ -1,7 +1,8 @@
 {
   "name": "mauriciovieira-dot-net",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Personal website using pug and webpack",
+  "engines" : { "node" : ">=6 <7" },
   "main": "index.js",
   "scripts": {
     "build": "webpack",
