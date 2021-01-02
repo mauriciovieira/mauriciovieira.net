@@ -1,67 +1,44 @@
 {
-  "name": "mauriciovieira-dot-net",
+  "name": "gatsby-starter-default",
+  "private": true,
+  "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
-  "description": "Personal website using pug and webpack",
-  "engines" : { "node" : ">=6 <7" },
-  "main": "index.js",
-  "scripts": {
-    "build": "webpack",
-    "clean": "rm -rf dist/",
-    "deploy": "gh-pages -d dist",
-    "lint": "eslint .",
-    "lintfix": "eslint --fix .",
-    "pretest": "npm run lint",
-    "test": "mocha --compilers js:babel-register --require babel-polyfill --recursive ./tests"
+  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "dependencies": {
+    "gatsby": "^2.26.1",
+    "gatsby-image": "^2.5.0",
+    "gatsby-plugin-manifest": "^2.6.1",
+    "gatsby-plugin-offline": "^3.4.0",
+    "gatsby-plugin-react-helmet": "^3.4.0",
+    "gatsby-plugin-sharp": "^2.8.0",
+    "gatsby-source-filesystem": "^2.5.0",
+    "gatsby-transformer-sharp": "^2.6.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^6.1.0"
   },
-  "author": "Mauricio Vieira",
-  "license": "GPL-3.0",
+  "devDependencies": {
+    "prettier": "2.2.1"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "0BSD",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
   "repository": {
     "type": "git",
-    "url": "git@github.com:mauriciovieira/mauriciovieira.net.git"
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
   },
-  "dependencies": {},
-  "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-core": "^6.17.0",
-    "babel-loader": "^6.2.5",
-    "babel-polyfill": "^6.16.0",
-    "babel-preset-es2015": "^6.16.0",
-    "babel-preset-stage-0": "^6.16.0",
-    "babel-register": "^6.16.3",
-    "babel-root-import": "^4.1.3",
-    "chai": "^3.5.0",
-    "copy-webpack-plugin": "^4.0.0",
-    "css-loader": "^0.25.0",
-    "eslint": "^3.19.0",
-    "eslint-plugin-chai-friendly": "^0.2.0",
-    "extract-text-webpack-plugin": "^1.0.1",
-    "favicons-webpack-plugin": "0.0.7",
-    "file-loader": "^0.9.0",
-    "gh-pages": "^0.11.0",
-    "html-webpack-plugin": "^2.22.0",
-    "jsdom": "9.12.0",
-    "jsdom-global": "2.1.1",
-    "mithril-query": "^1.0.0",
-    "mocha": "^3.1.2",
-    "node-sass": "^3.10.1",
-    "pug": "^2.0.0-beta6",
-    "pug-loader": "^2.3.0",
-    "sass-loader": "^4.0.2",
-    "style-loader": "^0.13.1",
-    "webpack": "^1.13.2"
-  },
-  "babel": {
-    "plugins": [
-      [
-        "babel-root-import",
-        {
-          "rootPathSuffix": "scripts"
-        }
-      ]
-    ],
-    "presets": [
-      "es2015",
-      "stage-0"
-    ]
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
   }
 }
