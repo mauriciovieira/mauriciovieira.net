@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "mauriciovieira.net",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "The personal website of Mauricio Vieira",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Mauricio Vieira <website@mauriciovieira.net>",
   "dependencies": {
     "gatsby": "^2.26.1",
     "gatsby-image": "^2.5.0",
@@ -36,9 +36,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/mauriciovieira/mauriciovieira.net"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/mauriciovieira/mauriciovieira.net/issues"
   }
 }
