@@ -13,6 +13,5 @@ ratings:
   paths:
   - "**.js"
   - "**.jsx"
-  - "**.pug"
 exclude_paths:
 - tests/
